@@ -23,9 +23,26 @@
     <a-assets>
         <img id="gradient" src="images/gradient-fade.png" />
         <img id="border"   src="images/border.png" />
+	<img id="sky" src="images/stars.jpg" crossorigin="anonymous" />
+	<img id="grass" src="images/grass.jpg" crossorigin="anonymous" />
+	<img id="crate" src="images/crate.jpg" crossorigin="anonymous" />
+	<img id="earth" src="images/earth-sphere.jpg" crossorigin="anonymous" />
+	<img id="hexagons" src="images/hexagons.png" crossorigin="anonymous" />
     </a-assets>
+		
+    <a-sky 
+		color = "#FFFFFF"
+		material = "src: #sky">
+    </a-sky>
 
-    <a-sky color = "#000337"></a-sky>
+    <a-plane
+		width="100" height="100"
+		position=" 0.00 0.00 0.00" 
+		rotation="-90 0 0" 
+		color="#888888" 
+		material="src: #grass; repeat:10 10; transparent: true; opacity: 0.75"
+		shadow="cast: false; receive: true">
+    </a-plane>
 
     <a-entity 
         id="player" 
@@ -55,7 +72,7 @@
         </a-entity>
 
     </a-entity>
-	<a-entity
+    <a-entity
 		id="textArea"
 		position="0 2.5 -2"
 		geometry="primitive: plane; width: 3; height:auto"
@@ -64,7 +81,7 @@
 				transparent: true; opacity: 0.90; color: #AAAAFF;
 				value: Kreader - An Immersive and Interactive Reading Experience powered by Generative AI"
 		updater>
-	</a-entity>
+    </a-entity>
     
     <!-- 
          example file data:
