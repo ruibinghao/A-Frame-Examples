@@ -23,6 +23,7 @@
     <a-assets>
         <img id="gradient" src="images/gradient-fade.png" />
         <img id="border"   src="images/border.png" />
+	<img id="mockup"   src="images/Screen-Mockup.png" />    
     </a-assets>
 
     <a-sky color = "#000337"></a-sky>
@@ -92,7 +93,9 @@
                           controllerListenerId: #controller-data;">
     </a-entity>
 
-</a-scene>
+    <a-entity 
+	id="mockup" position="1.6, 1, -1.5" geometry="primitive: plane" material="src: #mockup">
+    </a-scene>
 
 </body>
 </html>
