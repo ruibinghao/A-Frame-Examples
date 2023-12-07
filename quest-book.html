@@ -16,7 +16,17 @@
 
 <body>
 
-<script></script>
+<script>
+// load music into global variable for access by music-player component
+window["MusicData"] = [
+    {
+        audioURL: "music/Audio1.mp3"
+    },
+    {
+        audioURL: "music/Audio2.mp3" 
+    }
+];	
+</script>
 
 <a-scene environment="preset: dream;" renderer="antialias: true;">
         
