@@ -35,7 +35,9 @@ window["MusicData"] = [
         <img id="border"   src="images/border.png" />
 	<img id="mockup"   src="images/Screen-Mockup.png" />
 	<img id="iconPlay" src="images/icon-play.jpg" />
-	<img id="iconStop" src="images/icon-stop.jpg" />    
+	<img id="iconStop" src="images/icon-stop.jpg" /> 
+	<audio id="Audio1" src="music/Audio1.mp3" />
+	<audio id="Audio2" src="music/Audio2.mp3" />		
     </a-assets>
 
     <a-sky color = "#000337"></a-sky>
@@ -108,7 +110,8 @@ window["MusicData"] = [
     <a-entity 
 	id="mockup" 
 	position="0, 1, -1.5" 
-	geometry="primitive: plane; width: 0.96; height: 0.54" 
+	geometry="primitive: plane; width: 0.96; height: 0.54"
+	sound="src: #Audio1; on: click; positional: false; volume: 0.50"
 	material="src: #mockup; width: 963; height: 541">
     </a-entity>
 	
